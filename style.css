@@ -1,0 +1,69 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 5px;
+      box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+      overflow: hidden;
+    background:rgb(63, 175, 130);
+    color: #333;
+      font-family: 'Open Sans', Helvetica, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  #menu_checkbox{
+      display:none;
+  }
+  label{
+      cursor:pointer;
+  }
+  
+  
+  
+  .line-a, .line-b, .line-c {
+      height: 8px;
+      width: 80px;
+      background-color: white;
+      border-radius: 3px;
+      transition: 0.3s;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3)
+  }
+  
+  .line-b {
+      margin: 14px 0;
+      transition-delay: .3s;
+  }
+  
+  #menu_checkbox:checked +label div:nth-child(2){
+      width:0;
+      height:0;
+      margin:-8px 40px;
+      transition-delay: 0s;
+  
+  }
+  
+  
+  #menu_checkbox:checked + label div:first-child {
+      transform: rotate(45deg);
+      transition-delay: 0.2s;
+  }
+  
+  #menu_checkbox:checked + label div:last-child {
+      transform: rotate(135deg);
+      transition-delay: 0.2s;
+  }
+  
+  
+  
